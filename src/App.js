@@ -48,7 +48,7 @@ function App(props) {
             </button>
           </div>
         </li>
-        <li className='todo-stack-small'>
+        <li className='todo stack-small'>
           <div className='c-cb'>
             <input id='todo-1' type='checkbox' />
             <label className='todo-label' htmlFor='todo-1'>Sleep</label>
