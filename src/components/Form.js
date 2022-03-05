@@ -6,11 +6,12 @@ export default function Form(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    props.addTask("Say hello!");
+    props.addTask(name);
+    setName("");
   }
 
   function handleChange(e) {
-    console.log(e.target.value);
+    setName(e.target.value);
   }
 
   return (
