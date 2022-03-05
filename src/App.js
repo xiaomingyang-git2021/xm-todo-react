@@ -1,4 +1,5 @@
 import React from 'react';
+import Todo from './components/Todo';
 
 function App(props) {
   return (
@@ -32,7 +33,10 @@ function App(props) {
         3 tasks remaining
       </h2>
       <ul role='list' className='todo-list stack-large stack-exception' aria-labelledby='list-heading'>
-        <li className='todo stack-small'>
+        <Todo name="Eat" />
+        <Todo name="Sleep"/>
+        <Todo name="Repeat"/>
+        {/* <li className='todo stack-small'>
           <div className='c-cb'>
             <input id='todo-0' type='checkbox' defaultChecked={true} />
             <label className='todo-label' htmlFor='todo-0'>
@@ -77,7 +81,7 @@ function App(props) {
               Delete <span className='visually-hidden'>Repeat</span>
             </button>
           </div>
-        </li>
+        </li> */}
       </ul>
     </div>
   )
