@@ -6,10 +6,14 @@ import Todo from './components/Todo';
 function App(props) {
   const taskList = props.tasks?.map(task =>
     <Todo id={task.id} name={task.name} completed={task.completed} key={task.id}/>);
+
+  function addTask(name) {
+    alert(name);
+  }
   return (
     <div className='todoapp stack-large'>
       <h1>TodoMatic</h1>
-      <Form />
+      <Form addTask={addTask}/>
       {/* <form>
         <h2 className='label-wrapper'>
           <label htmlFor='new-todo-input' className='label__lg'>What needs to be done?</label>
